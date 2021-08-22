@@ -1,0 +1,48 @@
+@import 'variables';
+
+.playlist {
+  padding-top: 30rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.author {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.song {
+  width: 35rem;
+  margin: 0 auto 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba($white-color, 0.6);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  &:active {
+    opacity: 0.7;
+  }
+  &.active {
+    background-color: $red-light;
+    & > .body,
+    .btn-option {
+      color: $white-color;
+    }
+  }
+}
+
+.thumb {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.btn-option {
+  margin-left: auto;
+}

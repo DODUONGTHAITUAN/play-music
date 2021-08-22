@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384- 
+ B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+          <h4>Now playing</h4>
+          <h2 class="header-name">Current Song</h2>
+        </header>
+        <!-- CD -->
+        <img src="./images/speechless.jpg" alt="" class="cd" />
+        <!-- Control -->
+        <div class="control">
+          <button class="btn btn-repeat">
+            <i class="fas fa-redo-alt"></i>
+          </button>
+          <button class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button class="btn btn-main ">
+            <i class="fas fa-pause-circle pause"></i>
+            <i class="fas fa-play-circle play"></i>
+          </button>
+          <button class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+          </button>
+          <button class="btn btn-random">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+        <input
+          type="range"
+          name=""
+          id="progress"
+          class="progress"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+        <audio src="" id="audio"></audio>
+      </div>
+      <div class="playlist">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

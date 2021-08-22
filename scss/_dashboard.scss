@@ -1,0 +1,76 @@
+.dashboard {
+  background-color: #efefef;
+  padding-bottom: 1rem;
+  position: fixed;
+  width: 37.5rem;
+  border-radius: 0.5rem;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+  &-name {
+    font-weight: 700;
+  }
+}
+h4 {
+  font-weight: 600;
+  color: $btn-color;
+}
+
+.cd {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto 2rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.btn-main {
+  font-size: 4rem;
+  color: $red-light;
+}
+.btn.active {
+  color: $red-light;
+}
+
+.playing .play {
+  display: none;
+}
+
+.playing .pause {
+  display: block;
+}
+
+.pause {
+  display: none;
+}
+
+.pause,
+.play {
+  width: 4rem;
+  height: 4rem;
+}
+
+.progress {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 0.5rem;
+  appearance: none;
+  background: #d3d3d3;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.7rem;
+    height: 0.5rem;
+    background: $red-light;
+    cursor: pointer;
+  }
+}
